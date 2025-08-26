@@ -9,5 +9,14 @@ services:
       - .:/app
       - /app/node_modules
     command: 
-      npm run dev
+      npm run dev -- --legacy-watch
+    
+  mongo: 
+    image: mongo:latest
+    environment: 
+        - MONGO_INITDB_ROOT_USERNAME=root
+        - MONGO_INITDB_ROOT_PASSWORD=root
+volumes: 
+  mongo-data:
+
 

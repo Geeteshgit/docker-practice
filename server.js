@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/content", (req, res) => {
-    return res.send("<h1>This is nodemon for docker<h1/>")
+    return res.send("<h1>This is nodemon for docker<h1/>");
 });
 
 app.listen(PORT, () => {
